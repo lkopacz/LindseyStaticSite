@@ -1,7 +1,2 @@
-.testing {
-  width: percentage(5/7);
-}
-
-.test {
-  color: red;
-}
+@import '_partials/base/_base';
+@import '_partials/components/_components';
