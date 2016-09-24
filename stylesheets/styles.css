@@ -638,7 +638,8 @@ nav {
   nav a {
     display: block;
     margin-top: 5px;
-    background: red; }
+    background: red;
+    padding: 5px; }
 
 @media (min-width: 48em) {
   .menu {
