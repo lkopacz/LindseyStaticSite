@@ -568,18 +568,6 @@ Enable when using the pager CSS in typography partial
 */
 /**
  *
- * Take any drupal view formatted as Unformatted or HTML List and apply a 3 column grid layout
- *
- * $wrapper-name: The immediate div name above view-content and views-row
- *
- * $number-items: The number of items in the grid
- *
- * Future Plans:
- * Make a variable column version
- *
- */
-/**
- *
  * This method returns the content wrapped in the requested media query. It also checks to see if
  * the no-query variable has been defined. If the variable exists the content is output and wrapped
  * in a class as defined by the variable.
@@ -593,8 +581,42 @@ Enable when using the pager CSS in typography partial
  * pass true as the second argument.
  *
  */
+body {
+  background: black;
+  color: white; }
+
 header {
-  background-color: #ff4d4d; }
+  background-color: #ff4d4d;
+  display: flex;
+  flex-direction: column; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  nav a {
+    display: block;
+    margin-top: 5px;
+    background: red; }
+
+@media (min-width: 48em) {
+  .menu {
+    width: 100%;
+    padding: 10px 18px; } }
+
+.menu li {
+  list-style: none;
+  font-size: 17px; }
+
+@media (min-width: 48em) {
+  .toggle-nav {
+    display: none; } }
+
+.active {
+  display: none; }
+  @media (min-width: 48em) {
+    .active {
+      display: flex; } }
 
 section {
   max-width: 900px;
