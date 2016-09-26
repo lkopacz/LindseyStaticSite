@@ -4,6 +4,13 @@ $(".toggle-nav").click(function(e) {
 	//click on the three lines and change the class back to the display I had before
         $(this).toggleClass('active');
         $('.menu ul').toggleClass('active');
+        $('.menu ul').toggleClass('mobile');
  
         e.preventDefault();
 });
+//function to return the value of the height of an element
+function getHeaderHeight(element){
+	console.log($(element).height() + "px");	
+}
+
+getHeaderHeight("header");
