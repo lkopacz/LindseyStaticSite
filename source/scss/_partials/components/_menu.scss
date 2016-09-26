@@ -3,16 +3,18 @@
 */
 .menu {
 	position:relative;
+	flex-grow:1;
 	@include mquery(medium){
 		width:40%;
+		height:100px;
 	}
 	ul {
 		position:absolute;
 		top:120%;
 		right: 20px;
 		padding:10px 18px;
-		border-radius:3px;
 		background:$red;
+		z-index: 100;
 		@include mquery(medium) {
 			display:flex;
 		}
@@ -23,7 +25,9 @@
 				width: 100%;
 			    position: absolute;
 			    top: 0px;
-			    left: 50px;
+			    left: 0px;
+			    padding:20px;
+			    margin:0;
 			}
 		}
 		&:after {
@@ -34,14 +38,17 @@
 			left:22px;
 			content:'';
 		}
+		&.mobile{
+			position:absolute;
+			top:115px;
+		}
 	}
 	li {
 		margin:5px 0px 5px 0px;
 		display:block;
+		flex-grow: 1;
 		@include mquery(medium) {
-			margin:0px 50px 0px 0px;
 		    list-style:none;
-		    font-size:17px;
 		    &:last-child {
 		    	margin-right:0px;
 		    }

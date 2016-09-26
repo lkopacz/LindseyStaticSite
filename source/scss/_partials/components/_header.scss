@@ -5,9 +5,11 @@
 
 header {
   background-color: $red;
+  box-sixing:border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
+  height:auto;
   @include mquery(medium){
   	  flex-wrap: wrap;
   }
@@ -17,9 +19,14 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:100%;
   a {
   	display:block;
   	margin-top: 5px;
   	padding:5px;
   }
+}
+
+#logo {
+	flex-grow:1;
 }

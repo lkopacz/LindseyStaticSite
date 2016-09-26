@@ -583,7 +583,12 @@ Enable when using the pager CSS in typography partial
  */
 body {
   background: black;
-  color: white; }
+  color: white;
+  box-sizing: border-box; }
+
+main {
+  position: relative;
+  z-index: 1; }
 
 section {
   max-width: 900px;
@@ -595,6 +600,7 @@ section {
 */
 .menu {
   position: relative;
+  flex-grow: 1;
   /*a {
 		display:block;
 		@include mquery(medium){
@@ -603,14 +609,15 @@ section {
 	}*/ }
   @media (min-width: 48em) {
     .menu {
-      width: 40%; } }
+      width: 40%;
+      height: 100px; } }
   .menu ul {
     position: absolute;
     top: 120%;
     right: 20px;
     padding: 10px 18px;
-    border-radius: 3px;
-    background: #ff4d4d; }
+    background: #ff4d4d;
+    z-index: 100; }
     @media (min-width: 48em) {
       .menu ul {
         display: flex; } }
@@ -622,7 +629,9 @@ section {
           width: 100%;
           position: absolute;
           top: 0px;
-          left: 50px; } }
+          left: 0px;
+          padding: 20px;
+          margin: 0; } }
     .menu ul:after {
       width: 0px;
       height: 0px;
@@ -630,14 +639,16 @@ section {
       top: 0%;
       left: 22px;
       content: ''; }
+    .menu ul.mobile {
+      position: absolute;
+      top: 115px; }
   .menu li {
     margin: 5px 0px 5px 0px;
-    display: block; }
+    display: block;
+    flex-grow: 1; }
     @media (min-width: 48em) {
       .menu li {
-        margin: 0px 50px 0px 0px;
-        list-style: none;
-        font-size: 17px; }
+        list-style: none; }
         .menu li:last-child {
           margin-right: 0px; } }
 
@@ -660,9 +671,11 @@ section {
 */
 header {
   background-color: #ff4d4d;
+  box-sixing: border-box;
   display: flex;
   flex-direction: row;
-  flex-wrap: no-wrap; }
+  flex-wrap: no-wrap;
+  height: auto; }
   @media (min-width: 48em) {
     header {
       flex-wrap: wrap; } }
@@ -670,8 +683,12 @@ header {
 nav {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   nav a {
     display: block;
     margin-top: 5px;
     padding: 5px; }
+
+#logo {
+  flex-grow: 1; }
