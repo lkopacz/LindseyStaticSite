@@ -15,17 +15,6 @@ gulp.task('sass', function(){
 	.pipe(gulp.dest('stylesheets'))
 });
 
-gulp.task('watch', function(){
-  gulp.watch('source/scss/**/*.scss', ['sass']); 
-  // Other watchers
-})
-
- gulp.task('minify-css', function() {
-  return gulp.src('stylesheets/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('stylesheets'));
-});
-
 gulp.task('autoprefixer', function () {
 	return gulp.src('stylesheets/*.css')
         .pipe(sourcemaps.init())
@@ -33,3 +22,15 @@ gulp.task('autoprefixer', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('stylesheets'));
 });
+
+gulp.task('minify-css', function() {
+  return gulp.src('stylesheets/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('stylesheets'));
+});
+
+gulp.task('watch', function(){
+  gulp.watch('source/scss/**/*.scss', ['sass']); 
+  // Other watchers
+});
+
