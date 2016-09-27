@@ -641,7 +641,11 @@ section {
       content: ''; }
     .menu ul.mobile {
       position: absolute;
-      top: 115px; }
+      margin: 0;
+      top: 174.875px; }
+      @media (min-width: 695px) {
+        .menu ul.mobile {
+          top: 130.875px; } }
   .menu li {
     margin: 5px 0px 5px 0px;
     display: block;

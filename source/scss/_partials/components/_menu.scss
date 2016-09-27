@@ -40,7 +40,11 @@
 		}
 		&.mobile{
 			position:absolute;
-			top:115px;
+			margin: 0;
+			top:174.875px;
+			@media (min-width:695px) {
+				top:130.875px;
+			}
 		}
 	}
 	li {
