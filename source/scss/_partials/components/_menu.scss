@@ -43,8 +43,19 @@
 			position:absolute;
 			margin: 0;
 			top:174.875px;
+			width: 100vw;
 			@media (min-width:695px) {
 				top:130.875px;
+			}
+			@include mquery(medium){
+				display:flex;
+				width: 100%;
+				right: 20px;
+			    position: absolute;
+			    top: 0px;
+			    left: 0px;
+			    padding:20px;
+			    margin:0;
 			}
 		}
 	}

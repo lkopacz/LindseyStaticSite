@@ -11,9 +11,9 @@ $(".toggle-nav").click(function(e) {
 
 //chnaging the classes back if the menu is left open in small widths
 //and then expanded.
-$(window).resize(function () {
+/*$(window).resize(function () {
     var viewportWidth = $(window).width();
     if (viewportWidth > 767) {
             $(".menu ul").removeClass("mobile").addClass("active");
     }
-});
+});*/

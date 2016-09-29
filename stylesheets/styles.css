@@ -642,10 +642,21 @@ section {
     .menu ul.mobile {
       position: absolute;
       margin: 0;
-      top: 174.875px; }
+      top: 174.875px;
+      width: 100vw; }
       @media (min-width: 695px) {
         .menu ul.mobile {
           top: 130.875px; } }
+      @media (min-width: 48em) {
+        .menu ul.mobile {
+          display: flex;
+          width: 100%;
+          right: 20px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          padding: 20px;
+          margin: 0; } }
   .menu li {
     margin: 5px 0px 5px 0px;
     display: block;
