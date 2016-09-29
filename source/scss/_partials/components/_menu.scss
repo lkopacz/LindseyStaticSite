@@ -11,7 +11,7 @@
 	ul {
 		position:absolute;
 		top:120%;
-		right: 20px;
+		
 		padding:10px 18px;
 		background:$red;
 		z-index: 100;
@@ -23,6 +23,7 @@
 			@include mquery(medium) {
 				display:flex;
 				width: 100%;
+				right: 20px;
 			    position: absolute;
 			    top: 0px;
 			    left: 0px;

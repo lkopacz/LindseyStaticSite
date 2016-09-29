@@ -614,7 +614,6 @@ section {
   .menu ul {
     position: absolute;
     top: 120%;
-    right: 20px;
     padding: 10px 18px;
     background: #ff4d4d;
     z-index: 100; }
@@ -627,6 +626,7 @@ section {
         .menu ul.active {
           display: flex;
           width: 100%;
+          right: 20px;
           position: absolute;
           top: 0px;
           left: 0px;
