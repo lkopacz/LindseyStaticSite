@@ -599,7 +599,6 @@ section {
 ** All styling associated with the menu, both mobile and normal
 */
 .menu {
-  position: relative;
   flex-grow: 1;
   /*a {
 		display:block;
@@ -610,7 +609,8 @@ section {
   @media (min-width: 48em) {
     .menu {
       width: 40%;
-      height: 100px; } }
+      height: 100px;
+      position: relative; } }
   .menu ul {
     position: absolute;
     top: 120%;
@@ -643,7 +643,8 @@ section {
       position: absolute;
       margin: 0;
       top: 174.875px;
-      width: 100vw; }
+      width: 100vw;
+      left: 0; }
       @media (min-width: 695px) {
         .menu ul.mobile {
           top: 130.875px; } }
@@ -686,11 +687,11 @@ section {
 */
 header {
   background-color: #ff4d4d;
-  box-sixing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  height: auto; }
+  height: auto;
+  position: relative; }
   @media (min-width: 48em) {
     header {
       flex-wrap: wrap; } }

@@ -5,11 +5,11 @@
 
 header {
   background-color: $red;
-  box-sixing:border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
   height:auto;
+  position: relative;
   @include mquery(medium){
   	  flex-wrap: wrap;
   }

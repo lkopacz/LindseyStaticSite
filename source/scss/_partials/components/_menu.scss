@@ -2,11 +2,11 @@
 ** All styling associated with the menu, both mobile and normal
 */
 .menu {
-	position:relative;
 	flex-grow:1;
 	@include mquery(medium){
 		width:40%;
 		height:100px;
+		position: relative;
 	}
 	ul {
 		position:absolute;
@@ -44,6 +44,7 @@
 			margin: 0;
 			top:174.875px;
 			width: 100vw;
+			left:0;
 			@media (min-width:695px) {
 				top:130.875px;
 			}
