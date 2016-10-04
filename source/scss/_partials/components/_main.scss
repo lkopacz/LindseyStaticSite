@@ -1,3 +1,7 @@
+main{
+	padding: 0 10px;
+}
+
 .push-down {
 	top:177px;
 	@include mquery(medium) {

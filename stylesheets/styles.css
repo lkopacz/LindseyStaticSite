@@ -582,7 +582,7 @@ Enable when using the pager CSS in typography partial
  *
  */
 body {
-  background: black;
+  background: #9bc2cf;
   color: white;
   box-sizing: border-box; }
 
@@ -642,7 +642,7 @@ section {
     .menu ul.mobile {
       position: absolute;
       margin: 0;
-      top: 174.875px;
+      top: 238.875px;
       width: 100vw;
       left: 0; }
       .menu ul.mobile li {
@@ -650,9 +650,12 @@ section {
         @media (min-width: 48em) {
           .menu ul.mobile li {
             border-top: none; } }
-      @media (min-width: 695px) {
+      @media (min-width: 408px) {
         .menu ul.mobile {
-          top: 130.875px; } }
+          top: 194.875px; } }
+      @media (min-width: 736px) {
+        .menu ul.mobile {
+          top: 150.875px; } }
       @media (min-width: 48em) {
         .menu ul.mobile {
           display: flex;
@@ -712,7 +715,11 @@ nav {
     padding: 5px; }
 
 #logo {
-  flex-grow: 1; }
+  flex-grow: 1;
+  padding: 10px; }
+
+main {
+  padding: 0 10px; }
 
 .push-down {
   top: 177px; }

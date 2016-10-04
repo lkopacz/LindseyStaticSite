@@ -41,7 +41,7 @@
 		&.mobile{
 			position:absolute;
 			margin: 0;
-			top:174.875px;
+			top:238.875px;
 			width: 100vw;
 			left:0;
 			li{
@@ -50,8 +50,11 @@
 					border-top: none;
 				}
 			}
-			@media (min-width:695px) {
-				top:130.875px;
+			@media (min-width:408px) {
+				top:194.875px;
+			}
+			@media (min-width: 736px) {
+				top:150.875px;
 			}
 			@include mquery(medium){
 				display:flex;
