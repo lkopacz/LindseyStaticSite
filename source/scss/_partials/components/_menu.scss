@@ -46,6 +46,9 @@
 			left:0;
 			li{
 				border-top: 1px white solid;
+				@include mquery(medium){
+					border-top: none;
+				}
 			}
 			@media (min-width:695px) {
 				top:130.875px;

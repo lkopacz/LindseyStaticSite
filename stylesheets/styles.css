@@ -647,6 +647,9 @@ section {
       left: 0; }
       .menu ul.mobile li {
         border-top: 1px white solid; }
+        @media (min-width: 48em) {
+          .menu ul.mobile li {
+            border-top: none; } }
       @media (min-width: 695px) {
         .menu ul.mobile {
           top: 130.875px; } }
@@ -710,3 +713,9 @@ nav {
 
 #logo {
   flex-grow: 1; }
+
+.push-down {
+  top: 177px; }
+  @media (min-width: 48em) {
+    .push-down {
+      top: 0; } }
