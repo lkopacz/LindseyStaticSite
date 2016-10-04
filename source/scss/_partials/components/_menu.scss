@@ -45,6 +45,9 @@
 			top:174.875px;
 			width: 100vw;
 			left:0;
+			li{
+				border-top: 1px white solid;
+			}
 			@media (min-width:695px) {
 				top:130.875px;
 			}
