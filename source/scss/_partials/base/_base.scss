@@ -4,10 +4,13 @@
 @import '_mixins';
 @import '_extendables';
 
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
 body {
   background: #9bc2cf;
   color: white;
   box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {

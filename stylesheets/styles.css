@@ -4,6 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
 html {
   font-family: sans-serif;
   /* 1 */
@@ -584,7 +585,8 @@ Enable when using the pager CSS in typography partial
 body {
   background: #9bc2cf;
   color: white;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
 
 main {
   position: relative;
@@ -656,9 +658,6 @@ section {
       @media (min-width: 408px) {
         .menu ul.mobile {
           top: 172.875px; } }
-      @media (min-width: 736px) {
-        .menu ul.mobile {
-          top: 128.875px; } }
       @media (min-width: 48em) {
         .menu ul.mobile {
           display: flex;
