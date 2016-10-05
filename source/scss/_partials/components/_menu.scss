@@ -76,12 +76,9 @@
 		    }
 		}
 	}
-	/*a {
-		display:block;
-		@include mquery(medium){
-			
-		}
-	}*/
+	a {
+		text-decoration:none;
+	}
 }
  
 .toggle-nav {

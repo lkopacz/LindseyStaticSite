@@ -8,7 +8,6 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  height:auto;
   position: relative;
   @include mquery(medium){
   	  flex-wrap: wrap;
@@ -30,5 +29,4 @@ nav {
 #logo {
 	flex-grow:1;
   padding: 10px;
-  margin-bottom:0;
 }

@@ -604,13 +604,7 @@ section {
 ** All styling associated with the menu, both mobile and normal
 */
 .menu {
-  flex-grow: 1;
-  /*a {
-		display:block;
-		@include mquery(medium){
-			
-		}
-	}*/ }
+  flex-grow: 1; }
   @media (min-width: 48em) {
     .menu {
       width: 40%;
@@ -677,6 +671,8 @@ section {
         list-style: none; }
         .menu li:last-child {
           margin-right: 0px; } }
+  .menu a {
+    text-decoration: none; }
 
 .toggle-nav {
   text-decoration: none;
@@ -725,7 +721,6 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
-  height: auto;
   position: relative; }
   @media (min-width: 48em) {
     header {
@@ -743,8 +738,7 @@ nav {
 
 #logo {
   flex-grow: 1;
-  padding: 10px;
-  margin-bottom: 0; }
+  padding: 10px; }
 
 main {
   padding: 0 10px; }
