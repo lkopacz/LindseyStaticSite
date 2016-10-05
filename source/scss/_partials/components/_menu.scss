@@ -41,7 +41,7 @@
 		&.mobile{
 			position:absolute;
 			margin: 0;
-			top:238.875px;
+			top:216.875px;
 			width: 100vw;
 			left:0;
 			li{
@@ -51,10 +51,10 @@
 				}
 			}
 			@media (min-width:408px) {
-				top:194.875px;
+				top:172.875px;
 			}
 			@media (min-width: 736px) {
-				top:150.875px;
+				top:128.875px;
 			}
 			@include mquery(medium){
 				display:flex;
@@ -95,6 +95,34 @@
 	transition:color linear 0.15s;
 	@include mquery(medium) {
 		display:none;
+	}
+}
+
+.mobile-menu{
+	width: 60px;
+    display: block;
+    position: absolute;
+    top: 5rem;
+    right: 1.1rem;
+    height: 8px;
+    background: #fff;
+    &:before{
+		width: 100%;
+	    display: block;
+	    position: absolute;
+	    top: -1.25rem;
+	    height: 8px;
+	    background: #fff;
+	    content: "";
+	}
+	&:after{
+		width: 100%;
+	    display: block;
+	    position: absolute;
+	    top: 1.25rem;
+	    height: 8px;
+	    background: #fff;
+	    content: "";
 	}
 }
 

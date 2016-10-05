@@ -645,7 +645,7 @@ section {
     .menu ul.mobile {
       position: absolute;
       margin: 0;
-      top: 238.875px;
+      top: 216.875px;
       width: 100vw;
       left: 0; }
       .menu ul.mobile li {
@@ -655,10 +655,10 @@ section {
             border-top: none; } }
       @media (min-width: 408px) {
         .menu ul.mobile {
-          top: 194.875px; } }
+          top: 172.875px; } }
       @media (min-width: 736px) {
         .menu ul.mobile {
-          top: 150.875px; } }
+          top: 128.875px; } }
       @media (min-width: 48em) {
         .menu ul.mobile {
           display: flex;
@@ -688,6 +688,31 @@ section {
   @media (min-width: 48em) {
     .toggle-nav {
       display: none; } }
+
+.mobile-menu {
+  width: 60px;
+  display: block;
+  position: absolute;
+  top: 5rem;
+  right: 1.1rem;
+  height: 8px;
+  background: #fff; }
+  .mobile-menu:before {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: -1.25rem;
+    height: 8px;
+    background: #fff;
+    content: ""; }
+  .mobile-menu:after {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 1.25rem;
+    height: 8px;
+    background: #fff;
+    content: ""; }
 
 @media screen and (max-width: 48em) {
   .menu a {
@@ -719,7 +744,8 @@ nav {
 
 #logo {
   flex-grow: 1;
-  padding: 10px; }
+  padding: 10px;
+  margin-bottom: 0; }
 
 main {
   padding: 0 10px; }
