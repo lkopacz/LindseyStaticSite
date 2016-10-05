@@ -590,6 +590,9 @@ main {
   position: relative;
   z-index: 1; }
 
+p {
+  text-align: left; }
+
 section {
   max-width: 900px;
   margin: 0 auto;
@@ -726,3 +729,13 @@ main {
   @media (min-width: 48em) {
     .push-down {
       top: 0; } }
+
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center; }
+  footer ul {
+    display: flex;
+    list-style: none; }
+  footer li {
+    flex-grow: 1; }
