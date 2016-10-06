@@ -134,11 +134,24 @@
 		&:before{
 		    transform: rotate(45deg);
     		top: 0;
+    		transition-delay: 0s,.3s;
+    		transition-duration: .3s,.3s;
 		}
 		&:after{
 			transform: rotate(-45deg);
     		top: 0;
+    		transition-delay: 0s,.3s;
+    		transition-duration: .3s,.3s;
 		}
+	}
+}
+
+.mobile-menu {
+	&:before{
+		transition-property: top,transform;
+	}
+	&:after{
+		transition-property: bottom,transform;
 	}
 }
 

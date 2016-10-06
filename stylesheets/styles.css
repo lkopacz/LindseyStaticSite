@@ -715,11 +715,21 @@ section {
 
 .active .mobile-menu:before {
   transform: rotate(45deg);
-  top: 0; }
+  top: 0;
+  transition-delay: 0s,.3s;
+  transition-duration: .3s,.3s; }
 
 .active .mobile-menu:after {
   transform: rotate(-45deg);
-  top: 0; }
+  top: 0;
+  transition-delay: 0s,.3s;
+  transition-duration: .3s,.3s; }
+
+.mobile-menu:before {
+  transition-property: top,transform; }
+
+.mobile-menu:after {
+  transition-property: bottom,transform; }
 
 @media screen and (max-width: 48em) {
   .menu a {
