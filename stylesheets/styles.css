@@ -683,6 +683,10 @@ section {
   @media (min-width: 48em) {
     .toggle-nav {
       display: none; } }
+  .toggle-nav span {
+    transition: background 0s .3s; }
+  .toggle-nav.active span {
+    background: 0 0; }
 
 .mobile-menu {
   width: 60px;
@@ -708,6 +712,14 @@ section {
     height: 8px;
     background: #fff;
     content: ""; }
+
+.active .mobile-menu:before {
+  transform: rotate(45deg);
+  top: 0; }
+
+.active .mobile-menu:after {
+  transform: rotate(-45deg);
+  top: 0; }
 
 @media screen and (max-width: 48em) {
   .menu a {
