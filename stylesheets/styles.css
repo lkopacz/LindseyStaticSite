@@ -595,6 +595,14 @@ main {
 p {
   text-align: left; }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
 section {
   max-width: 900px;
   margin: 0 auto;
@@ -688,7 +696,7 @@ section {
   .toggle-nav.active span {
     background: 0 0; }
 
-.mobile-menu {
+.toggle-nav {
   width: 60px;
   display: block;
   position: absolute;
@@ -696,7 +704,7 @@ section {
   right: 1.1rem;
   height: 8px;
   background: #fff; }
-  .mobile-menu:before {
+  .toggle-nav:before {
     width: 100%;
     display: block;
     position: absolute;
@@ -704,7 +712,7 @@ section {
     height: 8px;
     background: #fff;
     content: ""; }
-  .mobile-menu:after {
+  .toggle-nav:after {
     width: 100%;
     display: block;
     position: absolute;
@@ -713,22 +721,22 @@ section {
     background: #fff;
     content: ""; }
 
-.active .mobile-menu:before {
+.toggle-nav.active .mobile-menu:before {
   transform: rotate(45deg);
   top: 0;
   transition-delay: 0s,.3s;
   transition-duration: .3s,.3s; }
 
-.active .mobile-menu:after {
+.toggle-nav.active .mobile-menu:after {
   transform: rotate(-45deg);
   top: 0;
   transition-delay: 0s,.3s;
   transition-duration: .3s,.3s; }
 
-.mobile-menu:before {
+.toggle-nav:before {
   transition-property: top,transform; }
 
-.mobile-menu:after {
+.toggle-nav:after {
   transition-property: bottom,transform; }
 
 @media screen and (max-width: 48em) {
