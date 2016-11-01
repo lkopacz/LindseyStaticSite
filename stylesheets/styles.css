@@ -715,17 +715,18 @@ section {
     background: #fff;
     content: ""; }
 
-.toggle-nav.active .mobile-menu:before {
-  transform: rotate(45deg);
-  top: 0;
-  transition-delay: 0s,.3s;
-  transition-duration: .3s,.3s; }
-
-.toggle-nav.active .mobile-menu:after {
-  transform: rotate(-45deg);
-  top: 0;
-  transition-delay: 0s,.3s;
-  transition-duration: .3s,.3s; }
+.toggle-nav.active {
+  background: none; }
+  .toggle-nav.active:before {
+    transform: rotate(45deg);
+    top: 0;
+    transition-delay: 0s,.3s;
+    transition-duration: .3s,.3s; }
+  .toggle-nav.active:after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition-delay: 0s,.3s;
+    transition-duration: .3s,.3s; }
 
 .toggle-nav:before {
   transition-property: top,transform; }
