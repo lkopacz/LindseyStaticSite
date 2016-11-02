@@ -583,7 +583,9 @@ Enable when using the pager CSS in typography partial
  *
  */
 body {
-  background: #9bc2cf;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url(../images/sunrise-background.jpg);
+  background-size: cover;
   color: white;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif; }
@@ -622,7 +624,7 @@ section {
     position: absolute;
     top: 120%;
     padding: 0;
-    background: #ff4d4d;
+    /*background:$red;*/
     z-index: 100; }
     @media (min-width: 48em) {
       .menu ul {
@@ -737,11 +739,15 @@ section {
   .menu a {
     display: block; } }
 
+@media screen and (max-width: 31.25em) {
+  .menu ul {
+    background-color: rgba(255, 77, 77, 0.5); } }
+
 /*
 ** Contains all items within the <header> tags
 */
 header {
-  background-color: #ff4d4d;
+  background-color: rgba(255, 77, 77, 0.5);
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;

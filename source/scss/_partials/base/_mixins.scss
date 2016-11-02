@@ -23,6 +23,11 @@
   }
 }
 
+//Mixin that converts hex values to rgba
+@mixin hex2rgba-bg($hexcolor, $opacity) {
+  background-color: rgba($hexcolor, $opacity); 
+}
+
 @mixin placeholder($c-placeholder: '#888888') {
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {

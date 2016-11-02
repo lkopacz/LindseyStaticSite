@@ -7,7 +7,9 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 
 body {
-  background: #9bc2cf;
+  @include hex2rgba-bg(#ffffff, .5);
+  background-image: url(../images/sunrise-background.jpg);
+  background-size:cover;
   color: white;
   box-sizing:border-box;
   font-family: 'Montserrat', sans-serif;

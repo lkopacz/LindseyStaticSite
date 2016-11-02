@@ -4,7 +4,7 @@
 */
 
 header {
-  background-color: $red;
+  @include hex2rgba-bg(#ff4d4d, .5);
   display: flex;
   flex-direction: row;
   flex-wrap: no-wrap;
