@@ -590,10 +590,6 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif; }
 
-main {
-  position: relative;
-  z-index: 1; }
-
 p {
   text-align: left; }
 
@@ -771,13 +767,14 @@ nav {
   padding: 10px; }
 
 main {
+  position: relative;
+  z-index: 1;
   padding: 0 10px; }
-
-.push-down {
-  top: 177px; }
-  @media (min-width: 48em) {
-    .push-down {
-      top: 0; } }
+  main.push-down {
+    top: 177px; }
+    @media (min-width: 48em) {
+      main.push-down {
+        top: 0; } }
 
 footer {
   max-width: 600px;
@@ -788,3 +785,6 @@ footer {
     list-style: none; }
   footer li {
     flex-grow: 1; }
+  footer.push-down {
+    position: relative;
+    top: 175px; }

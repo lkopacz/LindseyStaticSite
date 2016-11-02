@@ -3,6 +3,7 @@ $(".toggle-nav").click(function(e) {
         $('.menu ul').toggleClass('active');
         $('.menu ul').toggleClass('mobile');
         $('main').toggleClass('push-down');
+        $('footer').toggleClass('push-down');
         e.preventDefault();
 });
 

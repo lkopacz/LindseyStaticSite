@@ -1,10 +1,12 @@
 main{
+	position: relative;
+	z-index: 1;
 	padding: 0 10px;
-}
-
-.push-down {
-	top:177px;
-	@include mquery(medium) {
-		top:0;
+	&.push-down {
+		top:177px;
+		@include mquery(medium) {
+			top:0;
+		}
 	}
 }
+
