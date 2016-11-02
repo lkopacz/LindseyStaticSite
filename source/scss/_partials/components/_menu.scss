@@ -41,7 +41,7 @@
 		&.mobile{
 			position:absolute;
 			margin: 0;
-			top:216.875px;
+			top:238.875px;
 			width: 100vw;
 			left:0;
 			li{
@@ -51,7 +51,7 @@
 				}
 			}
 			@media (min-width:408px) {
-				top:172.875px;
+				top:194.875px;
 			}
 			@include mquery(medium){
 				display:flex;
@@ -154,7 +154,7 @@
 	}
 }
 
-@media screen and (max-width:$bp-small){
+@media screen and (max-width:767px){
 	.menu {
 		ul {
 			@include hex2rgba-bg(#ff4d4d, .5);

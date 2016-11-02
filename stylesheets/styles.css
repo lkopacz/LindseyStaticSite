@@ -651,7 +651,7 @@ section {
     .menu ul.mobile {
       position: absolute;
       margin: 0;
-      top: 216.875px;
+      top: 238.875px;
       width: 100vw;
       left: 0; }
       .menu ul.mobile li {
@@ -661,7 +661,7 @@ section {
             border-top: none; } }
       @media (min-width: 408px) {
         .menu ul.mobile {
-          top: 172.875px; } }
+          top: 194.875px; } }
       @media (min-width: 48em) {
         .menu ul.mobile {
           display: flex;
@@ -739,7 +739,7 @@ section {
   .menu a {
     display: block; } }
 
-@media screen and (max-width: 31.25em) {
+@media screen and (max-width: 767px) {
   .menu ul {
     background-color: rgba(255, 77, 77, 0.5); } }
 
