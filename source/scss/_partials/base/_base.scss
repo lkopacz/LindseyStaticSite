@@ -8,8 +8,10 @@
 
 body {
   @include hex2rgba-bg(#ffffff, .5);
-  background-image: url(../images/sunrise-background.jpg);
+  background: url(../images/sunrise-background.jpg);
   background-size:cover;
+  background-position: center center;
+  background-attachment: fixed;
   color: white;
   box-sizing:border-box;
   font-family: 'Montserrat', sans-serif;
