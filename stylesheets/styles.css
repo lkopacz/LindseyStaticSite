@@ -694,10 +694,6 @@ section {
   @media (min-width: 48em) {
     .toggle-nav {
       display: none; } }
-  .toggle-nav span {
-    transition: background 0s .3s; }
-  .toggle-nav.active span {
-    background: 0 0; }
   .toggle-nav:before {
     width: 100%;
     display: block;
@@ -715,24 +711,27 @@ section {
     background: #fff;
     content: ""; }
 
+.toggle-nav {
+  transition: background 0s .3s; }
+  .toggle-nav:before {
+    transition-delay: .3s, 0s;
+    transition-duration: .3s,.3s;
+    transition-property: top,transform; }
+  .toggle-nav:after {
+    transition-property: bottom,transform;
+    transition-delay: .3s, 0s;
+    transition-duration: .3s,.3s; }
+
 .toggle-nav.active {
   background: none; }
   .toggle-nav.active:before {
     transform: rotate(45deg);
     top: 0;
-    transition-delay: 0s,.3s;
-    transition-duration: .3s,.3s; }
+    transition-delay: 0s, 0.3s; }
   .toggle-nav.active:after {
     transform: rotate(-45deg);
     top: 0;
-    transition-delay: 0s,.3s;
-    transition-duration: .3s,.3s; }
-
-.toggle-nav:before {
-  transition-property: top,transform; }
-
-.toggle-nav:after {
-  transition-property: bottom,transform; }
+    transition-delay: 0s, 0.3s; }
 
 @media screen and (max-width: 48em) {
   .menu a {

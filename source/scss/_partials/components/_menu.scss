@@ -93,15 +93,6 @@
     @include mquery(medium) {
 		display:none;
 	}
-	//controls the transition of the menu w/ CSS animations
-	span {
-		transition: background 0s .3s;
-	}
-	&.active{
-		span {
-			background: 0 0;
-		}
-	}
     &:before{
 		width: 100%;
 	    display: block;
@@ -122,32 +113,37 @@
 	}
 }
 
+.toggle-nav {
+	transition: background 0s .3s;
+	&:before{
+		transition-delay: .3s, 0s;
+    	transition-duration: .3s,.3s;
+		transition-property: top,transform;
+	}
+	&:after{
+		transition-property: bottom,transform;
+		transition-delay: .3s, 0s;
+	    transition-duration: .3s,.3s;
+	}
+}
+
 .toggle-nav{
 	&.active {
 		background: none;
 		&:before{
 		    transform: rotate(45deg);
     		top: 0;
-    		transition-delay: 0s,.3s;
-    		transition-duration: .3s,.3s;
+    		transition-delay: 0s, 0.3s;
 		}
 		&:after{
 			transform: rotate(-45deg);
 	    	top: 0;
-	    	transition-delay: 0s,.3s;
-	    	transition-duration: .3s,.3s;
+	    	transition-delay: 0s, 0.3s;
 		}
 	}
 }
 
-.toggle-nav {
-	&:before{
-		transition-property: top,transform;
-	}
-	&:after{
-		transition-property: bottom,transform;
-	}
-}
+
 
 // The only max width media query I have to have so far
 @media screen and (max-width:$bp-med){
