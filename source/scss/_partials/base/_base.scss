@@ -4,6 +4,7 @@
 @import '_mixins';
 @import '_extendables';
 
+
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 
 body {
@@ -19,6 +20,10 @@ body {
 
 p {
 	text-align:left;
+}
+
+a {
+  color:$white;
 }
 
 .hidden {

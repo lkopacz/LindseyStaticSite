@@ -6,6 +6,9 @@ $almost-black: #1a0000;
 // Base Font Size
 $base-font-size: 16;
 
+// Font Awesome
+$fa-font-path: '../../../fonts';
+
 // Function to convert pixels to ems
 @function px-to-em($px, $denominator: $base-font-size) {
   @return $px / $denominator * 1em;
