@@ -17,52 +17,46 @@
 		@include mquery(medium) {
 			display:flex;
 		}
-		&.active{
-			display:none;
-			@include mquery(medium) {
-				display:flex;
-				width: 100%;
-				right: 20px;
-			    position: absolute;
-			    top: 0px;
-			    left: 0px;
-			    padding:20px;
-			    margin:0;
-			}
+	}
+	ul.active{
+		@include mquery(medium) {
+			display:flex;
+			overflow:visible;
+			width: 100%;
+			right: 20px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				padding:20px;
+				margin:0;
 		}
-		&:after {
-			width:0px;
-			height:0px;
-			position:absolute;
-			top:0%;
-			left:22px;
-			content:'';
+	}
+	ul:after {
+		width:0px;
+		height:0px;
+		position:absolute;
+		top:0%;
+		left:22px;
+		content:'';
+	}
+	ul.mobile{
+		position:absolute;
+		margin: 0;
+		top:238.875px;
+		width: 100vw;
+		left:0;
+		@media (min-width:408px) {
+			top:194.875px;
 		}
-		&.mobile{
-			position:absolute;
-			margin: 0;
-			top:238.875px;
-			width: 100vw;
-			left:0;
-			li{
-				border-top: 1px white solid;
-				@include mquery(medium){
-					border-top: none;
-				}
-			}
-			@media (min-width:408px) {
-				top:194.875px;
-			}
-			@include mquery(medium){
-				display:flex;
-				width: 100%;
-				right: 20px;
-			    position: absolute;
-			    top: 0px;
-			    left: 0px;
-			    padding:20px;
-			    margin:0;
-			}
+		@include mquery(medium){
+			display:flex;
+			width: 100%;
+			right: 20px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			padding:20px;
+			margin:0;
 		}
 	}
 	li {
@@ -78,6 +72,13 @@
 	}
 	a {
 		text-decoration:none;
+	}
+}
+
+.mobile li{
+	border-top: 1px white solid;
+	@include mquery(medium){
+		border-top: none;
 	}
 }
 
@@ -117,13 +118,13 @@
 	transition: background 0s .3s;
 	&:before{
 		transition-delay: .3s, 0s;
-    	transition-duration: .3s,.3s;
+    transition-duration: .3s,.3s;
 		transition-property: top,transform;
 	}
 	&:after{
 		transition-property: bottom,transform;
 		transition-delay: .3s, 0s;
-	    transition-duration: .3s,.3s;
+	  transition-duration: .3s,.3s;
 	}
 }
 
@@ -151,13 +152,22 @@
 		a{
 			display:block;
 		}
-	}
-}
-
-@media screen and (max-width:767px){
-	.menu {
 		ul {
 			@include hex2rgba-bg(#ff4d4d, .5);
 		}
+	}
+	ul.active {
+		position: absolute;
+		bottom: 600px
+		transition-property: bottom;
+		transition-duration: .3s,.3s;
+		transition-timing-function: cubic-bezier(0.17, 0.04, 0.03, 0.94);
+	}
+	ul.mobile {
+		position: absolute;
+		bottom: 0px
+		transition-property: bottom;
+		transition-duration: .3s,.3s;
+		transition-timing-function:ease-in;
 	}
 }

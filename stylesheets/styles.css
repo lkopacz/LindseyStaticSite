@@ -630,49 +630,43 @@ section {
     @media (min-width: 48em) {
       .menu ul {
         display: flex; } }
+  @media (min-width: 48em) {
     .menu ul.active {
-      display: none; }
-      @media (min-width: 48em) {
-        .menu ul.active {
-          display: flex;
-          width: 100%;
-          right: 20px;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          padding: 20px;
-          margin: 0; } }
-    .menu ul:after {
-      width: 0px;
-      height: 0px;
+      display: flex;
+      overflow: visible;
+      width: 100%;
+      right: 20px;
       position: absolute;
-      top: 0%;
-      left: 22px;
-      content: ''; }
-    .menu ul.mobile {
-      position: absolute;
-      margin: 0;
-      top: 238.875px;
-      width: 100vw;
-      left: 0; }
-      .menu ul.mobile li {
-        border-top: 1px white solid; }
-        @media (min-width: 48em) {
-          .menu ul.mobile li {
-            border-top: none; } }
-      @media (min-width: 408px) {
-        .menu ul.mobile {
-          top: 194.875px; } }
-      @media (min-width: 48em) {
-        .menu ul.mobile {
-          display: flex;
-          width: 100%;
-          right: 20px;
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          padding: 20px;
-          margin: 0; } }
+      top: 0px;
+      left: 0px;
+      padding: 20px;
+      margin: 0; } }
+  .menu ul:after {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0%;
+    left: 22px;
+    content: ''; }
+  .menu ul.mobile {
+    position: absolute;
+    margin: 0;
+    top: 238.875px;
+    width: 100vw;
+    left: 0; }
+    @media (min-width: 408px) {
+      .menu ul.mobile {
+        top: 194.875px; } }
+    @media (min-width: 48em) {
+      .menu ul.mobile {
+        display: flex;
+        width: 100%;
+        right: 20px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 20px;
+        margin: 0; } }
   .menu li {
     margin: 5px 0px 5px 0px;
     display: block;
@@ -684,6 +678,12 @@ section {
           margin-right: 0px; } }
   .menu a {
     text-decoration: none; }
+
+.mobile li {
+  border-top: 1px white solid; }
+  @media (min-width: 48em) {
+    .mobile li {
+      border-top: none; } }
 
 .toggle-nav {
   width: 60px;
@@ -738,11 +738,15 @@ section {
 
 @media screen and (max-width: 48em) {
   .menu a {
-    display: block; } }
-
-@media screen and (max-width: 767px) {
+    display: block; }
   .menu ul {
-    background-color: rgba(255, 77, 77, 0.5); } }
+    background-color: rgba(255, 77, 77, 0.5); }
+  ul.active {
+    transition-property: all;
+    transform: translateY(-600px);
+    transition-duration: .3s,.3s; }
+  ul.mobile {
+    transform: translateY(0px); } }
 
 /*
 ** Contains all items within the <header> tags
