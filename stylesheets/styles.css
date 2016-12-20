@@ -654,7 +654,8 @@ section {
     margin: 0;
     top: 238.875px;
     width: 100vw;
-    left: 0; }
+    left: 0;
+    height: 177px; }
     @media (min-width: 408px) {
       .menu ul.mobile {
         top: 194.875px; } }
