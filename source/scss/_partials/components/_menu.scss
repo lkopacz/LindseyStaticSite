@@ -158,14 +158,14 @@
 	}
 	ul.active {
 		position: absolute;
-		bottom: 600px
+		bottom: 600px;
 		transition-property: bottom;
 		transition-duration: .3s,.3s;
 		transition-timing-function: cubic-bezier(0.17, 0.04, 0.03, 0.94);
 	}
 	ul.mobile {
 		position: absolute;
-		bottom: 0px
+		bottom: 0px;
 		transition-property: bottom;
 		transition-duration: .3s,.3s;
 		transition-timing-function:ease-in;

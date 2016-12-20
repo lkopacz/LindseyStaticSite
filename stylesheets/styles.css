@@ -586,6 +586,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   background: url(../images/sunrise-background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   color: white;
@@ -742,11 +743,17 @@ section {
   .menu ul {
     background-color: rgba(255, 77, 77, 0.5); }
   ul.active {
-    transition-property: all;
-    transform: translateY(-600px);
-    transition-duration: .3s,.3s; }
+    position: absolute;
+    bottom: 600px;
+    transition-property: bottom;
+    transition-duration: .3s,.3s;
+    transition-timing-function: cubic-bezier(0.17, 0.04, 0.03, 0.94); }
   ul.mobile {
-    transform: translateY(0px); } }
+    position: absolute;
+    bottom: 0px;
+    transition-property: bottom;
+    transition-duration: .3s,.3s;
+    transition-timing-function: ease-in; } }
 
 /*
 ** Contains all items within the <header> tags

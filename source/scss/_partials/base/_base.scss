@@ -10,7 +10,8 @@
 body {
   @include hex2rgba-bg(#ffffff, .5);
   background: url(../images/sunrise-background.jpg);
-  background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   color: white;
