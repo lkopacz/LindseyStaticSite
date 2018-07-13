@@ -3,25 +3,11 @@ $red: #ff4d4d;
 $white: #ffffff;
 $almost-black: #1a0000;
 
-// Base Font Size
-$base-font-size: 16;
-
-// Font Awesome
-$fa-font-path: '../../../fonts';
-
-// Function to convert pixels to ems
-@function px-to-em($px, $denominator: $base-font-size) {
-  @return $px / $denominator * 1em;
-}
-
 // Breakpoints
-$bp-small: px-to-em(500);
-$bp-med: px-to-em(768);
-$bp-large: px-to-em(1150);
-
-// The max-width of the stage on full desktop in pixels (see mixin stagecenter)
-$max-stage-width: 1024;
-
-$no-query: '.no-mediaqueries';
-
-$small-gap: 1em;
+$screen: "only screen" !default;
+$small-max: 480px !default;
+$medium-max: 767px !default;
+$large-max: 1023px !default;
+$small: $screen $small-max;
+$medium: $screen $medium-max;
+$large: $screen $large-max + 1;

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 	<title>Lindsey's Personal Site</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://use.fontawesome.com/959c676e4a.js"></script>
@@ -9,52 +9,40 @@
 
 <body>
 	<header>
-		<h1 id="logo">Lindsey Kopacz Front End Web Development</h1>
-		<a class="toggle-nav" href="#" aria-labelledby="mobile-menu">
-			<span class="hidden" id="mobile-menu">Menu</span>
-		</a>
-		<nav class="menu">
-			<ul class="active" role="navigation">
-				<li><a href="#about">About</a></li>
-				<li><a href="#resume">Resume</a></li>
-				<li><a href="#code-samples">Samples</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+		<h1 class="logo"><span class="hidden">a11y with Lindsey</span>
+			<img src="images/logo.svg" alt="" />
+		</h1>
 	</header>
 	<main>
-		<section id="about">
-			<h2>About Me</h2>
-
-				<p>Lindsey Kopacz is a self taught developer. She first started out teaching herself Drupal 7 in 2012, and quickly started catching onto sitebuilding and module development.
-					She started her first development job in May 2014 and exponentially improved her skillset in Drupal.</p>
-
-				<p>Lindsey is now a front end developer who is passionate about inclusion and diversity in the technology field.
-					She speaks about a variety of topics, but particularly about Accessibility. See below to see slides or speaking events. </p>
-
-				<p>Lindsey loves yoga, dancing, makeup artistry, and feminism. In her free time you can find her teaching herself JavaScript, learning vegan recipes, and trying fun craft beers!</p>
-
-		</section>
-		<section id="resume">
-			<h2>Resume</h2>
-				<p>I am currently updating the web version of my resume. Please stay tuned!</p>
-		</section>
-		<section id="code-samples">
-			<h2>Samples and Speaking Events</h2>
-				<p>Tech Lady Hackathon 2016 - Introduction to Accessibility <a href="https://lkopacz.github.io/Introduction-to-Accessibility/#/">Slides</a> | <a href="https://www.youtube.com/watch?v=ZkrhJJZpR9o&t=850s">Video</a></p>
-
-				<p>Drupal GovCon 2016 - Low Effort, High Impact <a href="http://www.slideshare.net/lkopacz/low-effort-high-impact-ways-to-add-value-to-your-drupal-site">Slides</a></p>
-
-		</section>
-
+		<div class="block--bundle-hero">
+			<h2>My Mission</h2>
+				<div class="field--name-field-background-image">
+					<img src="images/computer.jpg" width="4831" height="3221" alt="" typeof="foaf:Image">
+				</div>
+				<div class="block--bundle-hero__wrapper">
+					<div class="field--name-body">
+						<p>Empowering and teaching people to make their Internet, <strong>Everyone's Internet.</strong></p>
+					</div>			
+				</div>
+		</div>
+		<div class="block--bundle-quote">
+			<h2>Did you know?</h2>
+			<div class="block--bundle-quote__wrapper">    
+				<div class="field field--name-field-quote field--type-string-long field--label-hidden field__item">Nearly 1 in 5 People Have a Disability in the U.S.</div>
+				<div class="field field--name-field-source field--type-link field--label-inline">
+				<div class="field__label">Source</div>
+					<div class="field__item">
+						<a href="https://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html">U.S. Census, 2010</a>
+					</div>
+				</div>	
+		</div>
+	</div>
 	</main>
 	<footer>
-		<h2 id="contact">Contact</h2>
 			<ul>
 				<li><a href="https://www.linkedin.com/in/lindsey-kopacz-70a09033?trk=hp-identity-photo" aria-label="Lindsey's LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 				<li><a href="https://twitter.com/littlekope0903" aria-label="Lindsey's Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 				<li><a href="https://github.com/lkopacz" aria-label="Lindsey's Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-				<li><a href="http://codepen.io/littlekope0903/" aria-label="Lindsey's Codepen"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
 			</ul>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

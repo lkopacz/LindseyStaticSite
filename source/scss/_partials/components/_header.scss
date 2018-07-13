@@ -1,32 +1,17 @@
-@import '_menu';
 /*
 ** Contains all items within the <header> tags
 */
 
 header {
-  @include hex2rgba-bg(#ff4d4d, .5);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  position: relative;
-  @include mquery(medium){
-  	  flex-wrap: wrap;
-  }
-}
+  background-color: #1E3650;
+  border-top: 15px solid #25768F;
+  padding: 2rem 0 1rem;
 
-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width:100%;
-  a {
-  	display:block;
-  	margin-top: 5px;
-  	padding:5px;
-  }
-}
+  .logo {
+    text-align: center;
 
-#logo {
-	flex-grow:1;
-  padding: 10px;
+    img {
+      width: 200px;
+    }
+  }
 }

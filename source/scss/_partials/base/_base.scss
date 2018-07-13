@@ -5,18 +5,16 @@
 @import '_extendables';
 
 
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif';
 
 body {
-  @include hex2rgba-bg(#ffffff, .5);
-  background: url(../images/sunrise-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  color: white;
   box-sizing:border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "PT Serif", serif;
 }
 
 p {
@@ -24,7 +22,16 @@ p {
 }
 
 a {
-  color:$white;
+  padding-bottom: 3px;
+  border-bottom: 3px solid;
+  text-decoration: none;
+  color: #25768F;
+  font-weight: bold;
+  transition: padding-bottom 0.3s ease;
+
+  &:hover {
+    padding-bottom: 5px;
+  }
 }
 
 .hidden {

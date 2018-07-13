@@ -1,5 +1,5 @@
 footer {
-	@include hex2rgba-bg(#ff4d4d, .5);
+	background: #1E3650;
 	margin: 0 auto;
 	padding: 15px 20%;
 	text-align: center;
@@ -13,9 +13,5 @@ footer {
 	}
 	a {
 		font-size: 24px;
-	}
-	&.push-down {
-		position:relative;
-		top:175px;
 	}
 }
