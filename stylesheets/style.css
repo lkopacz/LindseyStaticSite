@@ -753,7 +753,14 @@ footer {
   footer li {
     display: inline-block;
     padding: 1rem; }
-  footer a {
-    border-bottom: none;
-    color: #F3E9EA;
-    font-size: 24px; }
+    footer li a {
+      border-bottom: none;
+      color: #F3E9EA;
+      font-size: 1.5rem; }
+  footer .credit {
+    color: white;
+    font-size: 0.75rem; }
+    footer .credit a {
+      font-size: 0.75rem;
+      color: white;
+      border-bottom: 1px solid; }
