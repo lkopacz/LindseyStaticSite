@@ -718,7 +718,7 @@ header {
 
 #mc_embed_signup {
   margin: 0 auto;
-  margin-bottom: 2rem; }
+  margin: 3rem auto; }
   @media only screen and (min-width: 767px) {
     #mc_embed_signup {
       max-width: 768px; } }
@@ -755,6 +755,8 @@ footer {
   margin: 0 auto;
   padding: 15px 20%;
   text-align: center; }
+  footer ul {
+    padding: 0; }
   footer li {
     display: inline-block;
     padding: 1rem; }
